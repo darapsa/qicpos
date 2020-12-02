@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.3
+import QtQuick.Layouts 1.12
 import QtQuick.Controls.Material 2.3
 
 StackView {
@@ -8,10 +8,12 @@ StackView {
     property alias onboardingImage: onboardingImage
     property alias onboardingText1: onboardingText1
     property alias onboardingText2: onboardingText2
+    property alias disclaimerText: disclaimerText
     property alias startButton: startButton
 
-    initialItem: Page {
+    Page {
         id: page
+        anchors.fill: parent
         title: qsTr("Onboarding")
 
         ToolBar {
@@ -72,8 +74,8 @@ StackView {
                 anchors.left: parent.left
                 anchors.leftMargin: 16
                 font.pointSize: 24
-                font.family: "Work Sans"
-                font.weight: Font.Bold
+                font.family: "Roboto Mono"
+                font.weight: Font.Black
             }
 
             Text {
@@ -88,7 +90,7 @@ StackView {
                 anchors.left: parent.left
                 anchors.leftMargin: 16
                 font.pointSize: 16
-                font.family: "WorkSans"
+                font.family: "Roboto"
                 font.weight: Font.Normal
             }
 
@@ -101,10 +103,28 @@ StackView {
                 anchors.rightMargin: 8
                 anchors.left: parent.left
                 anchors.leftMargin: 8
-                anchors.bottom: parent.bottom
+                anchors.bottom: disclaimerText.top
+                font.weight: Font.Medium
                 anchors.bottomMargin: 16
                 font.capitalization: Font.MixedCase
-                font.family: "Work Sans"
+                font.family: "Roboto Mono"
+            }
+            Text {
+                id: disclaimerText
+                color: "#99000000"
+                text: qsTr("disclaimer text")
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                font.weight: Font.Normal
+                font.pointSize: 10
+                font.family: "Roboto Mono"
+                anchors.rightMargin: 24
+                anchors.leftMargin: 24
+                anchors.bottomMargin: 16
             }
         }
     }
