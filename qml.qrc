@@ -5,5 +5,9 @@
         <file>qtquickcontrols2.conf</file>
         <file>Onboarding.qml</file>
         <file>OnboardingForm.ui.qml</file>
+        <file>fonts/Roboto[wdth,wght].ttf</file>
+        <file>fonts/RobotoMono[wght].ttf</file>
+        <file>GetStarted.qml</file>
+        <file>GetStartedForm.ui.qml</file>
     </qresource>
 </RCC>
