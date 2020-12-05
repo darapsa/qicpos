@@ -1,13 +1,13 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>HomeForm.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>Onboarding.qml</file>
-        <file>OnboardingForm.ui.qml</file>
         <file>fonts/Roboto[wdth,wght].ttf</file>
         <file>fonts/RobotoMono[wght].ttf</file>
-        <file>GetStarted.qml</file>
-        <file>GetStartedForm.ui.qml</file>
+        <file>pages/GetStarted.qml</file>
+        <file>pages/GetStartedForm.ui.qml</file>
+        <file>pages/Onboarding.qml</file>
+        <file>pages/OnboardingForm.ui.qml</file>
+        <file>pages/HomeForm.ui.qml</file>
     </qresource>
 </RCC>
