@@ -7,12 +7,15 @@ Page {
     property alias backButton: backButton
     header: ToolBar {
         background: Rectangle {
-            color: "#FAFFFFFF"
+            color: "transparent"
         }
         RowLayout {
             ToolButton {
                 id: backButton
+                display: AbstractButton.IconOnly
                 highlighted: true
+                icon.name: "back-button"
+                icon.source: "../icons/arrow-back-24px.svg"
             }
         }
     }
