@@ -15,7 +15,7 @@ ApplicationWindow {
     OnboardingForm {
         id: pageView
         anchors.fill: parent
-        startButton.onClicked: pageView.push("pages/GetStarted.qml")
+        startButton.onClicked: pageView.push("pages/Home.qml")
         onboardingText1.text: qsTr("Everything you need to sell online.")
         onboardingText2.text: qsTr("Set up your store in minutes and bring your brand to life")
         disclaimerText.text: qsTr("By tapping 'Get started' and using this app, you're agreeing to our terms of service and privacy policy")
