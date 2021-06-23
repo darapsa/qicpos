@@ -13,6 +13,7 @@ Rectangle {
 		height: 56
 		color: "#deffffff"
 		placeholderText: "Add Customer"
+		placeholderTextColor: "#99ffffff"
 		anchors.left: parent.left
 		anchors.right: parent.right
 		anchors.top: parent.top
@@ -30,6 +31,7 @@ Rectangle {
 		height: 56
 		color: "#deffffff"
 		placeholderText: "Add Product"
+		placeholderTextColor: "#99ffffff"
 		anchors.left: parent.left
 		anchors.right: parent.right
 		anchors.top: addCustomer.bottom
@@ -48,12 +50,15 @@ Rectangle {
 		anchors.left: parent.left
 		anchors.right: parent.right
 		anchors.bottom: parent.bottom
+		flat: true
 		font.capitalization: Font.MixedCase
 		font.family: "Roboto Mono"
 		anchors.rightMargin: 16
 		anchors.leftMargin: 16
 		anchors.bottomMargin: 16
-		highlighted: true
-		Material.accent: Material.Grey
+		background: Rectangle {
+			implicitHeight: 30
+			radius: 4
+		}
 	}
 }
