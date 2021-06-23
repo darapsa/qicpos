@@ -1,7 +1,10 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Controls.Material 2.15
 
 Rectangle {
+	property alias skuTextInput: addProduct
+	property alias submitButton: submit
 	color: "#121212"
 	border.color: "#00000000"
 
@@ -37,5 +40,20 @@ Rectangle {
 		anchors.leftMargin: 16
 		font.family: "Roboto Mono"
 		anchors.topMargin: 16
+	}
+
+	Button {
+		id: submit
+		text: "Tagih"
+		anchors.left: parent.left
+		anchors.right: parent.right
+		anchors.bottom: parent.bottom
+		font.capitalization: Font.MixedCase
+		font.family: "Roboto Mono"
+		anchors.rightMargin: 16
+		anchors.leftMargin: 16
+		anchors.bottomMargin: 16
+		highlighted: true
+		Material.accent: Material.Grey
 	}
 }
