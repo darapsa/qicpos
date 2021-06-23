@@ -3,16 +3,16 @@ import QtQuick.Controls 2.15
 import QtQuick.Controls.Material 2.15
 
 Rectangle {
-	property alias skuTextInput: addProduct
+	property alias skuTextField: addProduct
 	property alias submitButton: submit
 	color: "#121212"
 	border.color: "#00000000"
 
-	TextInput {
+	TextField {
 		id: addCustomer
 		height: 56
 		color: "#deffffff"
-		text: "Add Customer"
+		placeholderText: "Add Customer"
 		anchors.left: parent.left
 		anchors.right: parent.right
 		anchors.top: parent.top
@@ -25,11 +25,11 @@ Rectangle {
 		anchors.topMargin: 16
 	}
 
-	TextInput {
+	TextField {
 		id: addProduct
 		height: 56
 		color: "#deffffff"
-		text: "Add Product"
+		placeholderText: "Add Product"
 		anchors.left: parent.left
 		anchors.right: parent.right
 		anchors.top: addCustomer.bottom
