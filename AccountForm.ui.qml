@@ -44,21 +44,17 @@ Rectangle {
 		anchors.topMargin: 16
 	}
 
-	Button {
-		id: submit
-		text: "Tagih"
-		anchors.left: parent.left
-		anchors.right: parent.right
-		anchors.bottom: parent.bottom
-		flat: true
-		font.capitalization: Font.MixedCase
-		font.family: "Roboto Mono"
-		anchors.rightMargin: 16
-		anchors.leftMargin: 16
-		anchors.bottomMargin: 16
-		background: Rectangle {
-			implicitHeight: 30
-			radius: 4
-		}
-	}
+    Button {
+        text: qsTr("Tagih")
+        Material.background: Material.Amber
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        font.letterSpacing: 1.24
+        font.capitalization: Font.MixedCase
+        font.family: "Roboto Mono"
+        anchors.rightMargin: 16
+        anchors.leftMargin: 16
+        anchors.bottomMargin: 16
+    }
 }
