@@ -3,6 +3,8 @@ import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 
 Item {
+	property alias button: listButton
+
     width: 360
     height: 48
     Layout.minimumWidth: 360
