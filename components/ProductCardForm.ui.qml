@@ -4,6 +4,10 @@ import QtQuick.Layouts 1.15
 import QtGraphicalEffects 1.15
 
 Item {
+	property alias previewImage: imageCardPreview
+	property alias nameLabel: productTitle
+	property alias priceLabel: productAmount
+
     width: 360
     height: 80
 
