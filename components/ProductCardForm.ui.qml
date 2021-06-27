@@ -129,8 +129,8 @@ Item {
                 layer.effect: OpacityMask {
                     maskSource: Rectangle {
                         anchors.centerIn: parent
-                        width: image.width
-                        height: image.height
+                        width: imageCardPreview.width
+                        height: imageCardPreview.height
                         radius: 8
                     }
                 }
